@@ -1,0 +1,268 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo_banner.css">
+    <link rel="stylesheet" href="css/estilo_header.css">
+    <link rel="stylesheet" href="css/estilo_corpo.css">
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Artes da Samara</title>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="" srcset=""></a>
+        </div>
+
+        <div class="menu notappear" id="my_menu">
+
+            <div class="menu_content">
+                <a href="#" onclick="show_menu()"> <i class="fa fa-home "> </i>Home</a>
+                <a href="#artes" onclick="show_menu()"> <i class="fa fa-paint-brush "> </i>Minhas Artes</a>
+                <a href="#artista" onclick="show_menu()"><i class="fa fa-address-card-o"></i>Quem Sou Eu? </a>
+                <a href="#faq" onclick="show_menu()"><i class="fa fa-question-circle"></i>Perguntas</a>
+
+                <div class="dropdown" onmouseenter="mouseenter()" onmouseleave="hide_dropdown()" onclick="show_hide()">
+                    <button class="btt_dropdown" id="dropdown"> <i class="fa fa-comments "> </i>Contatos<i
+                            class="fa fa-caret-up">
+                        </i>
+                    </button>
+
+                    <div class="dropdown_content">
+                        <a href="https://www.instagram.com/samara.desenha/?hl=pt-br" target="_blank"
+                            rel="noopener noreferrer"><i class="fa fa-instagram"> </i>Instagram</a>
+                        <a href="http://shorturl.at/dtIXY" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="#" onclick="show_menu()" class="menu_btt">
+                <i class="material-icons" style="font-size:40px;"> menu</i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container text_container" style="flex-direction:column;">
+
+        <div class="container title_container" style=" background: none;">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="" srcset=""></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container text_container">
+
+        <div class="article text">
+            <h2>Bem-Vindo!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur accusamus iure vitae quae
+                deleniti voluptas quaerat esse, natus dolores incidunt cupiditate, et illum labore quos aspernatur odio
+                optio consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a voluptatum
+                impedit fugit repudiandae quisquam eum modi maiores magni corrupti, illum molestias libero repellendus
+                aut? Quos aliquid consectetur nam magni.
+            </p>
+        </div>
+
+        <div class="article">
+            <img src="img/arte1.jpg" alt="">
+            <span id="artes"> <a href="https://www.instagram.com/samara.desenha/?hl=pt-br" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-instagram" aria-hidden="true" style="color:#1C242B;"></i>
+                    @samara.desenha</a></span>
+        </div>
+
+    </div>
+
+
+    <div class="container title_container">
+        <h1>Minhas Artes</h1>
+    </div>
+
+    <div class="container">
+
+        <div id="img_container">
+
+            <div class="wall">
+
+                <div class="n_text"> 1 / 5 </div>
+                <img src="img/banner/img01.jpg">
+            </div>
+
+            <div class="wall">
+                <div class="n_text"> 2 / 5 </div>
+                <img src="img/banner/img02.jpg">
+            </div>
+
+            <div class="wall">
+                <div class="n_text"> 3 / 5 </div>
+                <img src="img/banner/img03.jpg">
+            </div>
+
+            <div class="wall">
+                <div class="n_text"> 4 / 5 </div>
+                <img src="img/banner/img04.jpg">
+            </div>
+
+            <div class="wall">
+                <div class="n_text"> 5 / 5 </div>
+                <img src="img/banner/img05.jpg">
+            </div>
+
+            <a class="prev" onclick="plus_walls(-1)"> &#10094; </a>
+            <a class="next" onclick="plus_walls(1)"> &#10095; </a>
+
+            <div class="dot_box" id="artista">
+                <span class="dot" onclick="current_walls(1)"></span>
+                <span class="dot" onclick="current_walls(2)"></span>
+                <span class="dot" onclick="current_walls(3)"></span>
+                <span class="dot" onclick="current_walls(4)"></span>
+                <span class="dot" onclick="current_walls(5)"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container text_container">
+
+        <div class="article text">
+            <h2>Quem Sou Eu?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur accusamus iure vitae quae
+                deleniti voluptas quaerat esse, natus dolores incidunt cupiditate, et illum labore quos aspernatur odio
+                optio consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a voluptatum
+                impedit fugit repudiandae quisquam eum modi maiores magni corrupti, illum molestias libero repellendus
+                aut? Quos aliquid consectetur nam magni.
+            </p>
+        </div>
+
+        <div class="article">
+            <img src="img/samara1.jpg" alt="">
+            <span id="faq">Samara Lais</span>
+        </div>
+
+    </div>
+
+    <div class="container title_container">
+        <h1>Perguntas</h1>
+    </div>
+
+    <div class="container text_container" style="flex-direction: column;">
+
+        <button class="accordion" style="font-size: 19px;">Pergunta 1 <i class="fa fa-caret-up"></i></button>
+        <div class="article text panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
+        </div>
+
+        <button class="accordion" style="font-size:19px;">Pergunta 2 <i class="fa fa-caret-up"></i></button>
+        <div class="article text panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion" style="font-size: 19px;">Pergunta 3 <i class="fa fa-caret-up"></i></button>
+        <div class="article text panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion" style="font-size: 19px;">Pergunta 4 <i class="fa fa-caret-up"></i></button>
+        <div class="article text panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <div class="footer_content">
+
+            <div class="footer_menu">
+                <h4>Menu</h4>
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="#artes">Minhas Artes</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="#artista">Quem Sou Eu?</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="#faq">Perguntas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_menu">
+                <h4>Contatos</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/samara.desenha/?hl=pt-br" target="_blank"
+                            rel="noopener noreferrer"><i class="fa fa-instagram"> </i></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="http://shorturl.at/dtIXY" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_content">
+
+            <div class="footer_menu">
+                <h4>Site: Gabriel Lucas C. Mendes</h4>
+
+                <div style="display: flex; justify-content: space-evenly; margin: 20px;">
+                    <a href="https://www.linkedin.com/in/gabriel-lucas-c-mendes-2a8ab9187/" target="_blank"
+                        rel="noopener noreferrer"> <i class="fa fa-linkedin"></i> </a>
+                    <a href="https://github.com/gabrielmendes100" target="_blank" rel="noopener noreferrer"><i
+                            class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto: gabriel.lucascolangelo@gmail.com">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#"> <i class="fa fa-caret-up"></i>
+            Voltar ao Topo
+        </a>
+
+    </div>
+
+</body>
+
+<script src="js/script_menu.js"></script>
+<script src="js/script_slides.js"></script>
+<script src="js/sanfona.js"></script>
+
+</html>

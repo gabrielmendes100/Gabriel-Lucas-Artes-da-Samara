@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+ html {
+     scroll-behavior: smooth;
+}
+
+ body{
+     margin: 0%;
+     padding: 0%;
+     background-image: url(../img/background.jpg);
+     background-size: cover;
+     font-family: 'Sofia', cursive;
+     font-size: 22px;
+}
+
+ .container{
+     display: flex;
+     margin: 5px;
+     padding: 5px;
+     text-align: justify;
+     background-color:#dd9bb1ca;
+}
+
+ .title_container{
+     flex-direction: column;
+}
+
+ .title_container h1{
+     width: max-content;
+}
+
+ .title_container #logo{
+     background-color: #6e4555;
+     margin: 0px auto;
+     width:45%;
+}
+
+.title_container #logo, .article img, .article span, .text, .accordion{
+    box-shadow: 0 1px 2px #1c242b62, 
+    0 2px 4px #1c242b62, 
+    0 4px 8px #1c242b62;
+}
+
+ .title_container #logo img{
+     width: 100%;
+}
+
+ .text_container{
+     padding: 10px;
+     display: flex;
+     justify-content: space-around;
+     
+}
+
+ h1, h2, .accordion button{
+     color: #F5E3E0;
+     padding: 10px;
+     background-color:#6e4555;
+     font-weight: 500;
+}
+
+ .text_container h2{
+     text-align: start;
+}
+
+ .article{
+     display: flex;
+     flex-direction: column;
+     margin: 10px;
+     padding: 10px;
+}
+
+ .article img{
+     width: 80%;
+     margin:0px auto;
+}
+
+ .article img, .text, .accordion, .article span, .title_container #logo{
+     box-shadow: 0 1px 2px #1c242b62, 
+     0 2px 4px #1c242b62, 
+     0 4px 8px #1c242b62;
+}
+
+.article span, .article span a{
+    margin: auto;
+    padding: 5px;
+    font-weight: 1000;
+    font-size: large;
+    color: #1C242B;
+    background-color: #F5E3E0;
+}
+
+.article span i{
+    font-size: large;
+    font-weight: 800;
+    padding-right: 5px;
+    border-right: 1px solid #1C242B;
+}
+
+ .text{
+     font-weight: 550;
+     margin: auto 0px;
+     display: block;
+     width: 40%;
+     padding: 10px;
+     background-color:#F5E3E0;
+}
+
+ .text p{
+     text-indent: 15px;
+     line-height: 20px;
+     font-family: 'Quicksand', sans-serif;
+     font-weight: 200;
+}
+
+ .accordion {
+     cursor: pointer;
+     font-family: inherit;
+     font-size: inherit;
+     color: #F5E3E0;
+     padding: 10px;
+     border: none;
+     position: relative;
+     z-index: 1;
+     text-align: left;
+     background-color: #61414E;
+     outline: none;
+     width: 52%;
+     margin: auto;
+     transition: 0.2s;
+}
+
+ .accordion .fa-caret-up{
+     float: right;
+     font-size: larger;
+     padding: 5px 0px;
+     transition: 0.2s;
+}
+
+ .clickado{
+     background-color: #87556A;
+}
+
+ .clickado .fa-caret-up{
+     transform: rotate(180deg);
+}
+
+ .panel {
+     padding: 0 10px;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-out;
+     margin: auto;
+     width: 50%;
+}
+
+ #footer{
+     padding-bottom:10px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #6e4555;
+     color:#F5E3E0;
+}
+
+ #footer h4{
+     border-bottom: 1px solid #F5E3E0;
+     font-weight: 500;
+}
+
+ #footer .footer_content{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+ #footer .footer_menu{
+     margin:0px 30px;
+     text-align: left;
+}
+
+ #footer .footer_menu h4{
+     text-align: center;
+}
+
+ #footer i{
+     font-size:x-large;
+     display: block;
+margin: 0px auto;}
+
+ @media(max-width:1440px){
+     body{
+         font-size: 18px;
+    }
+
+}
+
+ @media(max-width: 1000px){
+     body{
+         font-size: 16px;
+    }
+
+     .title_container h1, .title_container h2{
+         text-align: center;
+         margin: 0px auto;
+         width: fit-content;
+    }
+
+     .title_container #logo{
+         width:60%;
+    }
+
+    #logo_desc{
+        width:fit-content;
+     }
+
+     .text_container{
+         display: block;
+    }
+
+     .article img{
+         width: 60%;
+    }
+
+     .text{
+         width: 90%;
+         margin: auto;
+    }
+
+     .accordion{
+         text-align: center;
+    }
+
+     .accordion{
+         width: 100%;
+    }
+
+     .panel{
+         width: fit-content;
+    }
+
+     #footer{
+         font-size: 16px;
+    }
+
+}
+
+ @media(max-width: 600px){
+     body{
+         font-size: 15px;
+    }
+
+     .title_container #logo{
+         background-color: #6e4555;
+         margin: 0px auto;
+         width:100%;
+    }
+
+     .title_container h1{
+         font-size: 25px;
+    }
+
+     .article img{
+         width: 95%;
+    }
+
+}
+
+ 
