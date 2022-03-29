@@ -3,6 +3,7 @@
 
  html {
      scroll-behavior: smooth;
+     font-size: 22px;
 }
 
  body{
@@ -11,7 +12,6 @@
      background-image: url(../img/background.jpg);
      background-size: cover;
      font-family: 'Sofia', cursive;
-     font-size: 22px;
 }
 
  .container{
@@ -191,14 +191,14 @@
 margin: 0px auto;}
 
  @media(max-width:1440px){
-     body{
+     html{
          font-size: 18px;
     }
 
 }
 
  @media(max-width: 1000px){
-     body{
+     html{
          font-size: 16px;
     }
 
@@ -241,14 +241,10 @@ margin: 0px auto;}
          width: fit-content;
     }
 
-     #footer{
-         font-size: 16px;
-    }
-
 }
 
  @media(max-width: 600px){
-     body{
+     html{
          font-size: 15px;
     }
 
